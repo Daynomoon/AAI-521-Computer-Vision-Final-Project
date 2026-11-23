@@ -1,68 +1,106 @@
-# AAI-521 Computer Vision Final Team Project
+# Robust Traffic Sign Recognition Using Deep Learning: A Comparative Analysis
 
-This project is being developed for **AAI-521: Computer Vision** in the Master of Science in Applied Artificial Intelligence program at the University of San Diego (USD).
-
+**Course:** AAI-521: Computer Vision  
+**Program:** Master of Science in Applied Artificial Intelligence  
+**University:** University of San Diego (USD)  
 **Project Status:** In Progress
 
 ## Project Overview
 
-This project focuses on applying computer vision and deep learning techniques to analyze and process image data. The goal is to develop a computer vision model that addresses a selected problem through image preprocessing, model development, and performance evaluation.
+This project focuses on developing and comparing deep learning models for traffic sign classification using the German Traffic Sign Recognition Benchmark (GTSRB) dataset. The goal is to evaluate how accurately different models recognize traffic signs under normal and challenging visual conditions.
 
-The project will use Python and Google Colab to explore image datasets, implement computer vision algorithms, and evaluate model performance using appropriate validation techniques and metrics.
+Two deep learning models will be compared:
+
+- **Custom Convolutional Neural Network (CNN):** A model developed and trained from scratch.
+- **MobileNetV2:** A pretrained model that will be fine-tuned using transfer learning.
+
+The project will also examine how reduced lighting, motion blur, and image noise affect model performance. The results will help identify the strengths and limitations of each approach.
 
 ## Team Members
 
-- Dina Othman
-- Zinah Othman
-- Christina Sadiq
+Dina Othman
+Zinah Othman
+Christina Sadiq
+
+## Dataset
+
+**German Traffic Sign Recognition Benchmark (GTSRB)**
+
+Dataset source: https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign
+
+The GTSRB dataset contains 51,839 labeled traffic sign images across 43 categories, including speed limits, warning signs, and regulatory signs.
+
+The dataset includes:
+
+- 39,209 training images
+- 12,630 testing images
+- 43 traffic sign classes
+- Images with varying sizes, lighting conditions, and viewing angles
+
+The original training dataset will be divided into training and validation sets, while the official test dataset will be kept separate for final evaluation.
 
 ## Project Components
 
-### Data Preparation and Exploration
+### 1. Dataset Preparation and Exploratory Data Analysis
 
-- Image dataset selection and collection
-- Exploratory Data Analysis (EDA)
-- Data cleaning and image preprocessing
-- Training, validation, and testing dataset splits
-- Data visualization and image analysis
+- Load and explore the GTSRB dataset.
+- Examine class distributions and image dimensions.
+- Check for missing, duplicate, or corrupted data.
+- Resize and normalize images.
+- Prepare training, validation, and testing datasets.
+- Explore data augmentation techniques.
+- Create visualizations and document preprocessing steps.
 
-### Model Development
+### 2. Custom CNN Development and Evaluation
 
-- Computer vision algorithm selection
-- Model implementation and training
-- Hyperparameter tuning
-- Model validation and optimization
+- Design and implement a custom CNN architecture.
+- Train the model using the prepared dataset.
+- Perform hyperparameter tuning to improve performance.
+- Evaluate accuracy, precision, recall, and F1-score.
+- Generate confusion matrices and training visualizations.
+- Analyze model performance and limitations.
 
-### Model Evaluation
+### 3. MobileNetV2 Development and Evaluation
 
-- Performance metrics and analysis
-- Model predictions and visualizations
-- Evaluation of model performance
-- Results interpretation and discussion of limitations
+- Implement a pretrained MobileNetV2 model.
+- Apply transfer learning and fine-tuning.
+- Train and optimize the model using the same dataset splits.
+- Evaluate performance using the same metrics as the custom CNN.
+- Generate confusion matrices and training visualizations.
+- Analyze model performance and limitations.
+
+### 4. Model Comparison and Robustness Testing
+
+Both models will be compared based on:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Training performance
+- Performance under reduced lighting
+- Performance under motion blur
+- Performance under image noise
+
+The final comparison will identify which model performs better under normal and challenging conditions and discuss the reasons for the differences.
+
 
 ## Technologies
 
 - Python
 - Google Colab
 - GitHub
+- TensorFlow / Keras
 - NumPy
+- Pandas
 - Matplotlib
 - OpenCV
-- Deep Learning Framework (To Be Determined)
+- Scikit-learn
 
+## Collaboration and Workflow
 
-## Dataset
+Google Colab will be used for developing and training the models, while GitHub will be used to organize project files and track contributions.
 
-The dataset will be selected based on the project's computer vision objectives.
+## Academic Use
 
-Dataset information, source references, and preprocessing procedures will be documented once the dataset has been finalized.
-
-## Project Deliverables
-
-- Technical report following APA 7 guidelines
-- GitHub repository containing project code and documentation
-- Recorded team presentation summarizing the methodology, results, and findings
-
-## License
-
-This repository is intended for academic use as part of the University of San Diego's MS-AAI program.
+This repository is intended for academic use as part of the University of San Diego's Master of Science in Applied Artificial Intelligence program.
