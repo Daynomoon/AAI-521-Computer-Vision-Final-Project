@@ -18,9 +18,9 @@ The project will also examine how reduced lighting, motion blur, and image noise
 
 ## Team Members
 
-Dina Othman
-Zinah Othman
-Christina Sadiq
+- Dina Othman
+- Zinah Othman
+- Christina Sadiq
 
 ## Dataset
 
